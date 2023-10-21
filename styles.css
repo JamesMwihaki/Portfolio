@@ -1,0 +1,346 @@
+body{
+    background-color: white;
+}
+
+.header {
+    position: fixed;
+    background-color: rgba(0, 0 ,0, 1);
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     z-index: 2;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    padding-right: 600px;
+    font-size: 24px;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    background-color: rgba(0, 0 ,255, 1);
+    margin: 20px;
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff9900; /* Change the color on hover */
+}
+
+.homeScreenView{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+  
+.img {
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.img img {
+    
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.contact-section {
+    text-align: center;
+    color:#000;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.contact-section p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: rgba(0, 0 ,0, .5); /* Button background color */
+    border: none;
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff9900; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
+}
+
+
+.resume{
+   
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 10px; ;
+
+}
+.resume p1{
+    width: 300px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+
+.about_me {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.about_me h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    padding: 10px; 
+    border-radius: 20px;
+
+}
+.about_me p1{
+   margin-top: 12px; 
+   margin-bottom: 12px  ;
+}
+
+
+.life_story_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.life_story {
+    flex: 1;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.life_story h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.life_story p {
+    font-size: 16px;
+    color: #666;
+}
+
+.location {
+    margin-top: 10px;
+}
+
+
+iframe{
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.projects{
+    text-align: center;
+    margin-top: -70px;
+}
+
+
+.project_grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.project_box {
+    border: 1px solid #000;
+    border-radius: 20px;
+    flex: 1;
+    height: 250px;
+    width: 250px;
+    position: relative;
+}
+
+.project_box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px; /* Adjust border radius to match the container */
+}
+
+.overlay_Text {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Background color for the overlay */
+    color: white; /* Text color for the overlay */
+    font-size: 18px; /* Adjust the text size as needed */
+    text-align: center;
+    z-index: 1; /* Ensure the text is on top of the image */
+}
+
+
+/* Style the footer container */
+footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+/* Center the content within the footer */
+.footer-content {
+    
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Style the contact information section */
+.contact-info {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Style the social media links */
+.social-media {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-media h3 {
+    font-size: 20px;
+}
+
+.social-media a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Style the copyright notice */
+.copyright {
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .contact-info, .social-media {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
